@@ -36,8 +36,8 @@
       </ul>
 
       <!-- ================= Experience ================= -->
-      <section id="experience">
-        <h2>Experience</h2>
+      <details class="section" id="experience" open>
+        <summary><h2>Experience</h2></summary>
 
         <div class="entry">
           <div class="entry-head">
@@ -135,11 +135,11 @@
             <li>Developed progress tracking workflows to monitor course completion and streamline onboarding operations.</li>
           </ul>
         </div>
-      </section>
+      </details>
 
       <!-- ================= Skills ================= -->
-      <section id="skills">
-        <h2>Technical Skills</h2>
+      <details class="section" id="skills" open>
+        <summary><h2>Technical Skills</h2></summary>
         <div class="skills">
           <div>
             <h3>Languages</h3>
@@ -178,11 +178,11 @@
             </ul>
           </div>
         </div>
-      </section>
+      </details>
 
       <!-- ================= Education ================= -->
-      <section id="education">
-        <h2>Education</h2>
+      <details class="section" id="education" open>
+        <summary><h2>Education</h2></summary>
 
         <div class="entry">
           <div class="entry-head">
@@ -211,11 +211,11 @@
             <li>Coursework: Data Structures, Algorithms, Machine Learning, Information Retrieval</li>
           </ul>
         </div>
-      </section>
+      </details>
 
       <!-- ================= Projects ================= -->
-      <section id="projects">
-        <h2>Selected Projects</h2>
+      <details class="section" id="projects" open>
+        <summary><h2>Selected Projects</h2></summary>
 
         <div class="entry">
           <div class="entry-head">
@@ -240,9 +240,19 @@
             <li>Implemented preprocessing techniques and CNN architecture to accurately classify human expressions into seven categories.</li>
           </ul>
         </div>
-      </section>
+      </details>
     </div>
   </main>
+
+  <script>
+    // Open a collapsed section when jumped to from the section links
+    function openFromHash() {
+      const el = location.hash && document.querySelector(location.hash);
+      if (el && el.tagName === "DETAILS") el.open = true;
+    }
+    window.addEventListener("hashchange", openFromHash);
+    openFromHash();
+  </script>
 
   <footer class="site">
     <div class="container">© 2026 Isha Talegaonkar</div>

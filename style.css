@@ -256,3 +256,30 @@ footer.site {
   nav a { padding: 4px 10px; }
   main { padding-top: 36px; }
 }
+
+/* ---------- Collapsible resume sections ---------- */
+details.section { scroll-margin-top: 80px; }
+details.section > summary {
+  list-style: none;
+  cursor: pointer;
+  user-select: none;
+}
+details.section > summary::-webkit-details-marker { display: none; }
+details.section > summary h2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+details.section > summary h2::after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  margin-right: 6px;
+  border-right: 2px solid var(--muted);
+  border-bottom: 2px solid var(--muted);
+  transform: rotate(45deg);
+  transition: transform 0.2s;
+}
+details.section:not([open]) > summary h2::after { transform: rotate(-45deg); }
+details.section > summary:hover h2 { color: var(--accent); }
+details.section > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 4px; }
