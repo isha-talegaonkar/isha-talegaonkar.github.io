@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resume · Isha Talegaonkar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site">
+    <div class="container">
+      <a class="brand" href="index.html">Isha Talegaonkar</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a class="active" href="resume.html">Resume</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>Resume</h1>
+      <p class="lede">Software engineer across search, distributed systems, and AI tooling.</p>
+
+      <ul class="toc">
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Technical Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Selected Projects</a></li>
+      </ul>
+
+      <!-- ================= Experience ================= -->
+      <section id="experience">
+        <h2>Experience</h2>
+
+        <div class="entry">
+          <div class="entry-head">
+            <h3>eBay</h3>
+            <span class="date">Feb 2026 – Present</span>
+          </div>
+          <div class="entry-head meta">
+            <span class="role">Software Engineer III – Search Indexing</span>
+            <span>San Jose, CA</span>
+          </div>
+          <ul>
+            <li>Improved query latency by <strong>2.5%</strong> through document reordering experiments on large-scale search infrastructure, contributing to an estimated <strong>$2.5M annual infrastructure cost savings</strong>.</li>
+            <li>Built a <strong>Claude-based release monitoring skill</strong> that tracks pod health across deployments, improving post-release visibility for on-call engineers.</li>
+            <li>Scaled index sharding from 2 to 45 shards to enable realistic query engine testing and improve cross-team validation workflows.</li>
+            <li>Led integration of new indexed fields by partnering with stakeholders and data engineering teams, and developed <strong>Spark and Airflow-based bulk indexing workflows</strong> for experimentation, deployment validation, and scheduled index creation across large-scale search infrastructure.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <h3>Walmart Global Tech</h3>
+            <span class="date">Jun 2023 – Feb 2026</span>
+          </div>
+          <div class="entry-head meta">
+            <span class="role">Software Engineer III – People Tech</span>
+            <span>Bentonville, AR</span>
+          </div>
+          <ul>
+            <li>Built scalable backend systems and APIs using <strong>Java, Spring Boot, Kafka, GraphQL, Elasticsearch</strong>, and distributed caching for low-latency cloud services.</li>
+            <li>Designed and maintained RESTful and GraphQL Federation APIs with caching, rate limiting, retries, and monitoring to improve reliability and performance at scale.</li>
+            <li>Led ingestion and transformation pipelines supporting <strong>2.2M+ associates</strong>, improving scalability, maintainability, and deployment efficiency across <strong>distributed systems</strong>.</li>
+            <li>Built a <strong>GraphQL MCP server</strong> for schema discovery, field ownership lookup, and provider documentation retrieval across environments.</li>
+            <li>Developed schema governance, validation, authentication, and workflow tooling integrated into CI/CD pipelines, improving GraphQL compliance, system security, and operational reliability.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <h3>Scientific Computing and Imaging Institute, University of Utah</h3>
+            <span class="date">Aug 2022 – May 2023</span>
+          </div>
+          <div class="entry-head meta">
+            <span class="role">Research Assistant</span>
+            <span>Salt Lake City, UT</span>
+          </div>
+          <ul>
+            <li>Developed and implemented the <a href="https://ml4ai.github.io/moviz-client/" target="_blank" rel="noopener">Moviz tool</a> for visualizing computation graphs in scientific model codebases using Python and Flask.</li>
+            <li>Automated graph construction workflows to improve scalability and reduce manual overhead for scientific model analysis.</li>
+            <li>Transitioned visualizations from manual creation using OmniGraffle to automatic rendering.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <h3>Walmart Global Tech</h3>
+            <span class="date">May 2022 – Aug 2022</span>
+          </div>
+          <div class="entry-head meta">
+            <span class="role">Software Engineer III Intern</span>
+            <span>Bentonville, AR</span>
+          </div>
+          <ul>
+            <li>Designed and developed efficient algorithms to validate and visualize <a href="https://medium.com/walmartglobaltech/schema-governance-approaches-for-graphql-68eaf32a48c0" target="_blank" rel="noopener">GraphQL schemas</a>.</li>
+            <li>Reduced the response rate from <strong>564.66 ms to 63.39 ms</strong> by detecting complex schemas prior to build.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <h3>Mastercard</h3>
+            <span class="date">Jul 2019 – Jul 2021</span>
+          </div>
+          <div class="entry-head meta">
+            <span class="role">Software Development Engineer I</span>
+            <span>Pune, India</span>
+          </div>
+          <ul>
+            <li>Automated Product Proposal Tool for potential Mastercard customers, involving brainstorming and data analysis utilizing Python, NumPy, Pandas, and Django.</li>
+            <li>Defect Dashboard web application for real-time statistics on open defects from ALM, featuring four REST APIs developed in an Agile environment using Java, Spring Boot, Angular 8, PostgreSQL, and Oracle.</li>
+            <li>Automation tool for database deployment, enhancing deployment processes and efficiency, implemented with Python and leveraging Object-Oriented Programming principles.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <h3>Citibank</h3>
+            <span class="date">May 2018 – Jun 2018</span>
+          </div>
+          <div class="entry-head meta">
+            <span class="role">Summer Analyst</span>
+            <span>Pune, India</span>
+          </div>
+          <ul>
+            <li>Built a Java and Angular portal to automate assignment of team-specific onboarding training for new hires.</li>
+            <li>Developed progress tracking workflows to monitor course completion and streamline onboarding operations.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ================= Skills ================= -->
+      <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills">
+          <div>
+            <h3>Languages</h3>
+            <ul class="tags">
+              <li>Python</li><li>Java</li><li>C</li><li>C++</li><li>JavaScript</li><li>TypeScript</li><li>SQL</li><li>Shell</li><li>Node.js</li><li>D3.js</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Tools</h3>
+            <ul class="tags">
+              <li>Anaconda</li><li>Splunk</li><li>Grafana</li><li>Bash</li><li>Memcache</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Technologies</h3>
+            <ul class="tags">
+              <li>Linux</li><li>Git</li><li>Angular</li><li>ReactJS</li><li>Agile</li><li>Kafka</li><li>Spark</li><li>HBase</li><li>Airflow</li><li>Elasticsearch</li><li>Docker</li><li>Kubernetes</li><li>PostgreSQL</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Frameworks</h3>
+            <ul class="tags">
+              <li>Spring Boot</li><li>RESTful APIs</li><li>GraphQL</li><li>Flask</li><li>Django</li><li>JUnit</li><li>Mockito</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Libraries</h3>
+            <ul class="tags">
+              <li>Pandas</li><li>NumPy</li><li>scikit-learn</li><li>Keras</li><li>TensorFlow</li><li>Maven</li>
+            </ul>
+          </div>
+          <div>
+            <h3>AI + Developer Tooling</h3>
+            <ul class="tags">
+              <li>LLM Applications</li><li>MCP</li><li>AI Agent Workflows &amp; Automation</li><li>Prompt Engineering</li><li>Claude Skills</li><li>RAG</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Education ================= -->
+      <section id="education">
+        <h2>Education</h2>
+
+        <div class="entry">
+          <div class="entry-head">
+            <h3>Master's, Computer Science <span class="meta">(3.9 GPA)</span></h3>
+            <span class="date">Aug 2021 – May 2023</span>
+          </div>
+          <div class="entry-head meta">
+            <span class="role">University of Utah</span>
+            <span>Salt Lake City, UT</span>
+          </div>
+          <ul>
+            <li>Coursework: Visualization for Data Science, Graduate Algorithms, Operating Systems</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <h3>Bachelor's in Engineering, Information Technology <span class="meta">(3.8 GPA)</span></h3>
+            <span class="date">Jul 2015 – Jun 2019</span>
+          </div>
+          <div class="entry-head meta">
+            <span class="role">University of Pune</span>
+            <span>Pune, India</span>
+          </div>
+          <ul>
+            <li>Coursework: Data Structures, Algorithms, Machine Learning, Information Retrieval</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ================= Projects ================= -->
+      <section id="projects">
+        <h2>Selected Projects</h2>
+
+        <div class="entry">
+          <div class="entry-head">
+            <h3>Twitter Data Analysis</h3>
+            <span class="date">Jan 2022 – May 2022</span>
+          </div>
+          <div class="meta role">Machine Learning, Python, Pandas, NumPy</div>
+          <ul>
+            <li>Analyzed Twitter data collected during the 2017 Atlantic Hurricane season to develop a Linear Regression model that identified the features contributing most to tweet engagement.</li>
+            <li>This research was published in <a href="https://idl.iscram.org/files/nurollahian/2023/2540_Nurollahian_etal2023.pdf" target="_blank" rel="noopener">ISCRAM 2023</a>.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <h3>Real-Time Facial Expression Recognition System</h3>
+            <span class="date">Jun 2018 – Jun 2019</span>
+          </div>
+          <div class="meta role">Python, Image Processing, Deep Learning</div>
+          <ul>
+            <li>Developed a real-time Facial Expression Recognition system using Convolutional Neural Networks. Research published in <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3421486" target="_blank" rel="noopener">Elsevier SSRN</a>.</li>
+            <li>Implemented preprocessing techniques and CNN architecture to accurately classify human expressions into seven categories.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site">
+    <div class="container">© 2026 Isha Talegaonkar</div>
+  </footer>
+</body>
+</html>
