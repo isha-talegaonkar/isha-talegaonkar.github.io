@@ -7,19 +7,9 @@
   --accent: #2f5d8a;
   --accent-soft: #e8eef5;
   --max: 820px;
+  color-scheme: light;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #121316;
-    --surface: #1a1c20;
-    --text: #e8e8ea;
-    --muted: #a0a4ab;
-    --border: #2b2e34;
-    --accent: #8ab4e0;
-    --accent-soft: #1f2a36;
-  }
-}
 
 * { box-sizing: border-box; }
 
