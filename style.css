@@ -260,18 +260,23 @@ footer.site {
 /* ---------- Collapsible resume sections ---------- */
 details.section { scroll-margin-top: 80px; }
 details.section > summary {
+  display: flex;             /* non list-item display drops the default marker */
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 56px 0 20px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
   list-style: none;
   cursor: pointer;
   user-select: none;
 }
-details.section > summary::-webkit-details-marker { display: none; }
-details.section > summary h2 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-details.section > summary h2::after {
+details.section > summary::-webkit-details-marker,
+details.section > summary::marker { display: none; content: ""; }
+details.section > summary h2 { margin: 0; padding: 0; border: 0; }
+details.section > summary::after {
   content: "";
+  flex: none;
   width: 9px;
   height: 9px;
   margin-right: 6px;
@@ -280,6 +285,7 @@ details.section > summary h2::after {
   transform: rotate(45deg);
   transition: transform 0.2s;
 }
-details.section:not([open]) > summary h2::after { transform: rotate(-45deg); }
+details.section:not([open]) > summary::after { transform: rotate(-45deg); }
 details.section > summary:hover h2 { color: var(--accent); }
+details.section > summary:hover::after { border-color: var(--accent); }
 details.section > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 4px; }
