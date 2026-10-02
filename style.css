@@ -226,26 +226,22 @@ section { scroll-margin-top: 80px; }
 }
 
 /* ---------- Blog ---------- */
-.coming-soon {
-  text-align: center;
-  padding: 80px 20px;
-  border: 1px dashed var(--border);
-  border-radius: 16px;
+.posts { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+
+.post {
+  display: block;
+  padding: 20px 22px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
   background: var(--surface);
+  color: var(--text);
+  transition: border-color 0.15s, transform 0.15s;
 }
-.coming-soon .badge {
-  display: inline-block;
-  padding: 4px 12px;
-  border-radius: 999px;
-  background: var(--accent-soft);
-  color: var(--accent);
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  margin-bottom: 16px;
-}
-.coming-soon p { color: var(--muted); max-width: 460px; margin: 0 auto; }
+.post:hover { border-color: var(--accent); transform: translateY(-1px); text-decoration: none; }
+.post h3 { margin: 4px 0 6px; }
+.post:hover h3 { color: var(--accent); }
+.post p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+.post-meta { font-size: 0.82rem; color: var(--muted); }
 
 /* ---------- Footer ---------- */
 footer.site {
