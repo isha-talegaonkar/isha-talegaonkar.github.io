@@ -129,7 +129,33 @@ h3 { font-size: 1.1rem; margin: 0; }
 .lede { font-size: 1.15rem; color: var(--muted); margin: 0 0 28px; }
 
 /* ---------- About ---------- */
+.header-art {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 220px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+.intro-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 190px;
+  align-items: center;
+  gap: 32px;
+  margin-top: 32px;
+}
 .hero { display: flex; flex-direction: column; gap: 8px; }
+.hero .lede { margin-bottom: 0; }
+.profile-photo {
+  display: block;
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--surface);
+  box-shadow: 0 0 0 1px var(--border);
+}
 
 .eyebrow {
   text-transform: uppercase;
@@ -313,6 +339,11 @@ footer.site {
   nav a { padding: 4px 8px; font-size: 0.88rem; }
   .theme-toggle { padding: 4px 8px; }
   main { padding-top: 36px; }
+}
+
+@media (max-width: 600px) {
+  .intro-layout { grid-template-columns: 1fr; gap: 20px; }
+  .profile-photo { grid-row: 1; width: 140px; height: 140px; }
 }
 
 /* ---------- Collapsible resume sections ---------- */
