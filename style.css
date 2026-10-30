@@ -164,6 +164,10 @@ h3 { font-size: 1.1rem; margin: 0; }
 .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--bg); }
 .btn.primary:hover { opacity: 0.9; color: var(--bg); }
 
+.resume-link { margin: 8px 0 0; }
+.social-section h2 { margin-top: 36px; }
+.social-icon { width: 18px; height: 18px; flex: none; }
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
